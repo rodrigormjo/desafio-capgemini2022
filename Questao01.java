@@ -22,7 +22,7 @@ public class Questao01 {
       j--;         
     }        
   }
-  
+
   public static void main(String[] args) {
     int capture;
     try (Scanner escada = new Scanner(System.in)) {
@@ -30,7 +30,10 @@ public class Questao01 {
       System.out.print("n = ");
       capture = Integer.parseInt(escada.nextLine());   
     }
+    System.out.println("");
     String[] vetor = criarVetor(capture);
-    renderEscada(vetor);    
+    renderEscada(vetor);
+    System.out.println("");
+    System.out.println("---Programa Encerrado---");  
   }
 }
