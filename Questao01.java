@@ -3,7 +3,6 @@ import java.util.*;
 public class Questao01 {
 
   static String[] criarVetor(int m) {
-
     String[] stringArray = new String[m]; 
     for (int i = 0; i < stringArray.length; i++){
       stringArray[i] = " ";
@@ -23,6 +22,7 @@ public class Questao01 {
       j--;         
     }        
   }
+  
   public static void main(String[] args) {
     int capture;
     try (Scanner escada = new Scanner(System.in)) {
@@ -31,9 +31,6 @@ public class Questao01 {
       capture = Integer.parseInt(escada.nextLine());   
     }
     String[] vetor = criarVetor(capture);
-    renderEscada(vetor);
-    
-    // System.out.println(Arrays.toString(vetor));
-    
+    renderEscada(vetor);    
   }
 }
